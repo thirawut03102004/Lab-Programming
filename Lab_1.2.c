@@ -12,7 +12,7 @@ void GetSet(int data[], int *num ) {
     
 }
 int main(){
-    int data[100], num;
+    int data[10], num;
     GetSet(data, &num) ;
     printf("Member : %d\n",num);
     for (int i = 1; i <= num; i++)
