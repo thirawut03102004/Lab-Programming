@@ -1,25 +1,25 @@
 #include <stdio.h>
 void explode(char str1[], char splitter, char str2[][10], int *count)
 {
-    int i = 0, j = 0, k = 0;
+    int a = 0, b = 0, c = 0;
     *count = 0;
-    while (str1[i] != '\0')
+    while (str1[a] != '\0')
     {
-        if (str1[i] == splitter)
+        if (str1[a] == splitter)
         {
-            str2[j][k] = '\0';
-            j++;             
-            k = 0;
+            str2[b][c] = '\0';
+            b++;             
+            c = 0;
         }
         else
         {
-            str2[j][k] = str1[i];
-            k++;
+            str2[b][c] = str1[a];
+            c++;
         }
-        i++;
+        a++;
     }
-    str2[j][k] = '\0';
-    *count = j + 1;
+    str2[b][c] = '\0';
+    *count = b + 1;
 }
 
 int main()
