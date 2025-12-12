@@ -3,6 +3,17 @@ void explode(char str1[], char splitter, char str2[][10], int *count)
 {
     int a = 0, b = 0, c = 0;
     *count = 0;
+    
+    while (str1[a] != '\0') {
+        if (str1[a] >= '0' && str1[a] <= '9') {
+            printf("ERROR\n");
+            *count = -1; 
+            return;
+        }
+        a++;
+    }
+    a = 0;
+
     while (str1[a] != '\0')
     {
         if (str1[a] == splitter)
