@@ -4,7 +4,6 @@ void explode(char str[], char splitter, char out[][10], int *count) {
     int i = 0, word = 0, letter = 0;
     *count = 0;
 
-    // ตรวจสอบตัวเลข
     while (str[i] != '\0') {
         if (str[i] >= '0' && str[i] <= '9') {
             printf("ERROR\n");
