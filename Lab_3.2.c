@@ -9,9 +9,9 @@ struct student {
 
 void upgrade( struct student *child ) {
     if (child->sex == 'M') {
-        child->gpa = child->gpa * 1.10;
+        child->gpa *= 1.10;
     } else if (child->sex == 'F') {
-        child->gpa = child->gpa * 1.20;
+        child->gpa *=  1.20;
     }
 }
 
